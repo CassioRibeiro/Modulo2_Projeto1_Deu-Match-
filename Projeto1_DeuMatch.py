@@ -10,7 +10,6 @@ import pandas as pd   #Importando a biblioteca pandas que será usada no código
 
 seleçao = []          #lista vazia onde os dados dos candidatos serão guardados.
 
-sair = "S"
 while True:
   nome = str.title(input("Digite o nome do candidato: "))   #Variável 'nome' que guardará o nome dos candidatos.
   print("-"*50)                                             #print para melhorar a visualização.
