@@ -1,4 +1,5 @@
-# Módulo2_Projeto1_Deumatch!
+###   FORMAÇÃO ANÁLISE DE DADOS RESILIA/SENAC     ###
+###   MÓDULO 2 - PROJETO INDIVIDUAL 1 - DEU MATCH ###
 
 Case proposto pela Resilia confirme pdf disponibilizado no repositório.
 No código importamos a biblioteca pandas para melhor exibição e tratamento onde economizamos tempo e linhas.
