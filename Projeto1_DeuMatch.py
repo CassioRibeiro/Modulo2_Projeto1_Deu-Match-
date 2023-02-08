@@ -32,27 +32,27 @@ while True:
   
 
 
-def achar (lista,a1,b1,c1,d1):                   #def criada para achar o candidatos aptos conforme parametros passados pelo usuário.
-  df = pd.DataFrame(lista)                       #transformação da lista indicada pelo usuário em um data frame.
-  dff = df[(df[1] >= a1) & (df[2] >= b1) & (df[3] >= c1) & (df[4] >= d1)]   #variável criada onde pegamos do freme original somente os candidatos que passaram conforme parametros dados pelo usuáriodo código. 
-  dff.columns = ["Candidato","e","t","p","s","Resultado"]                   #dando nome as colunas que antes eram numéricas.
-  dff = dff.drop(["e","t","p","s"], 1)                              #deletando as colunas que continham as notas para deixar o frame final conforme solicitação do usuário.
-  print("Os candidatos que atendem aos requisitos são :")           #print de apresentação do frame final com os candidatos aprovados.
-  return (print(dff))                                               #return do frame final com os aprovados.
+def achar (lista):                   #def criada para achar o candidatos aptos conforme parametros passados pelo usuário.
+    print("-"*50)
+    a=int(input("Vamos começar a pesquisa. Por favor nos diga a nota da entrevista: "))   #\
+    print("-"*50)                                                                          #\
+    b = int(input("Agora do teste teórico: "))                                              #\
+    print("-"*50)                                                                            #Variáveis onde o usuário insere os parâmetros para pesquisa de candidatos aprovados.
+    c = int(input("E do teste prático? "))                                                  #/
+    print("-"*50)                                                                          #/
+    d = int(input("Finalmente a ultima, nos diga a nota do teste de soft skills: "))      #/
+    print("-"*50)
+    df = pd.DataFrame(lista)                       #transformação da lista indicada pelo usuário em um data frame.
+    dff = df[(df[1] >= a) & (df[2] >= b) & (df[3] >= c) & (df[4] >= d)]   #variável criada onde pegamos do freme original somente os candidatos que passaram conforme parametros dados pelo usuáriodo código. 
+    dff.columns = ["Candidato","e","t","p","s","Resultado"]                   #dando nome as colunas que antes eram numéricas.
+    dff = dff.drop(["e","t","p","s"], 1)                              #deletando as colunas que continham as notas para deixar o frame final conforme solicitação do usuário.
+    print("Os candidatos que atendem aos requisitos são :")           #print de apresentação do frame final com os candidatos aprovados.
+    return (print(dff))                                               #return do frame final com os aprovados.
 
-print("-"*50)
-a=int(input("Vamos começar a pesquisa. Por favor nos diga a nota da entrevista: "))   #\
-print("-"*50)                                                                          #\
-b = int(input("Agora do teste teórico: "))                                              #\
-print("-"*50)                                                                            #Variáveis onde o usuário insere os parâmetros para pesquisa de candidatos aprovados.
-c = int(input("E do teste prático? "))                                                  #/
-print("-"*50)                                                                          #/
-d = int(input("Finalmente a ultima, nos diga a nota do teste de soft skills: "))      #/
-print("-"*50)
 
 
-print(achar(seleçao,a,b,c,d))                # linha final onde chamamos a função para retornar os candidatos aprovados conforme parâmetros passados.
 
+print(achar(seleçao))                # linha final onde chamamos a função para retornar os candidatos aprovados conforme parâmetros passados.
 
 
 
