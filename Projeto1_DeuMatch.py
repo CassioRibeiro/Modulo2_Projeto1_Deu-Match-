@@ -47,12 +47,11 @@ def achar (lista):                   #def criada para achar o candidatos aptos c
     dff.columns = ["Candidato","e","t","p","s","Resultado"]                   #dando nome as colunas que antes eram numéricas.
     dff = dff.drop(["e","t","p","s"], 1)                              #deletando as colunas que continham as notas para deixar o frame final conforme solicitação do usuário.
     print("Os candidatos que atendem aos requisitos são :")           #print de apresentação do frame final com os candidatos aprovados.
-    return (print(dff))                                               #return do frame final com os aprovados.
+    return (print(dff))                                                      #return do frame final com os aprovados.
 
 
 
-
-print(achar(seleçao))                # linha final onde chamamos a função para retornar os candidatos aprovados conforme parâmetros passados.
+achar(seleçao)               # linha final onde chamamos a função para retornar os candidatos aprovados conforme parâmetros passados.
 
 
 
