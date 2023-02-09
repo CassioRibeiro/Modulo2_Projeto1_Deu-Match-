@@ -1,6 +1,6 @@
 ### Formação Análise de Dados Resilia/Senac ###
 ###     Módulo 2 - Projeto 'Deu Match!'     ###
-###             Casio Ribeiro               ###
+###             Cassio Ribeiro               ###
 
 print("Seja bem vindo ao seletor de candidatos DEU MATCH !!")
 print("-"*50)
