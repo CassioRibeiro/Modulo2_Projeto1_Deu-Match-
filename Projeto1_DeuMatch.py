@@ -42,7 +42,7 @@ def achar (lista):                   #def criada para achar o candidatos aptos c
     d = int(input("Finalmente a ultima, nos diga a nota do teste de soft skills: "))      #/
     print("-"*50)
     df = pd.DataFrame(lista)                       #transformação da lista indicada pelo usuário em um data frame.
-    dff = df[(df[1] >= a) & (df[2] >= b) & (df[3] >= c) & (df[4] >= d)]   #variável criada onde pegamos do freme original somente os candidatos que passaram conforme parametros dados pelo usuáriodo código. 
+    dff = df[(df[1] >= a) & (df[2] >= b) & (df[3] >= c) & (df[4] >= d)]   #frame criad onde pegamos do freme original somente os candidatos que passaram conforme parametros dados pelo usuáriodo código. 
     dff.columns = ["Candidato","e","t","p","s","Resultado"]                   #dando nome as colunas que antes eram numéricas.
     dff = dff.drop(["e","t","p","s"], 1)                              #deletando as colunas que continham as notas para deixar o frame final conforme solicitação do usuário.
     print("Os candidatos que atendem aos requisitos são :")           #print de apresentação do frame final com os candidatos aprovados.
