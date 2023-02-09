@@ -8,7 +8,7 @@ print("-"*50)
 import pandas as pd   #Importando a biblioteca pandas que será usada no código
 
 
-seleçao = []          #lista vazia onde os dados dos candidatos serão guardados.
+selecao = []          #lista vazia onde os dados dos candidatos serão guardados.
 
 while True:
   nome = str.title(input("Digite o nome do candidato: "))   #Variável 'nome' que guardará o nome dos candidatos.
@@ -21,7 +21,7 @@ while True:
   print("-"*50)
   s = int(input("Digite a avaliação da soft skills: "))     #Variável 'e' que guardará a avaliação d softs skills do candidato.
   print("-"*50)
-  seleçao.append([nome,e,t,p,s,f"e{e}_t{t}_p{p}_s{s}"])     #Append responsável por criar uma nova lista dentro da lista seleçãoe ja cria o resultado formatado
+  selecao.append([nome,e,t,p,s,f"e{e}_t{t}_p{p}_s{s}"])     #Append responsável por criar uma nova lista dentro da lista seleçãoe ja cria o resultado formatado
   
   sair = str.upper(input("Deseja inserir dados de mais candidatos? [S/N] "))  #variável para sair ou contimuar do código.
   if sair == "N":     #condicionais para sair ou permanecer no loop
@@ -50,7 +50,7 @@ def achar (lista):                   #def criada para achar o candidatos aptos c
 
 
 
-achar(seleçao)               # linha final onde chamamos a função para retornar os candidatos aprovados conforme parâmetros passados.
+achar(selecao)               # linha final onde chamamos a função para retornar os candidatos aprovados conforme parâmetros passados.
 
 
 
