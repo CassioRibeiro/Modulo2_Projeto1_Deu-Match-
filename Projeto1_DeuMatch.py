@@ -1,6 +1,6 @@
 ### Formação Análise de Dados Resilia/Senac ###
 ###     Módulo 2 - Projeto 'Deu Match!'     ###
-###             Cassio Ribeiro               ###
+###             Cassio Ribeiro              ###
 
 print("Seja bem vindo ao seletor de candidatos DEU MATCH !!")
 print("-"*50)
@@ -31,7 +31,7 @@ while True:
   
 
 
-def achar (lista):                   #def criada para achar o candidatos aptos conforme parametros passados pelo usuário.
+def achar (lista):                   #def criada para achar os candidatos aptos conforme parâmetros passados pelo usuário.
     print("-"*50)
     a=int(input("Vamos começar a pesquisa. Por favor nos diga a nota da entrevista: "))   #\
     print("-"*50)                                                                          #\
